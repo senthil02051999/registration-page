@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Registration page">
+    <meta name="keywords" content="Registration page">
+
+    <!-- Title Page-->
+    <title> Register Form</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+    <!-- main js -->
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-1">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Registration Info</h2>
+                    <form>
+                        <div class="input-group">
+                            <input class="input--style-1" type="text" placeholder="NAME" name="name" id="firstName"
+                                value="" required data-tooltip="abc">
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1 js-datepicker" type="email" placeholder="Email"
+                                        name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="age" required>
+                                            <option disabled="disabled" selected="selected" >AGE</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1 js-datepicker" type="text" placeholder="BIRTHDATE"
+                                        name="birthday" required>
+                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label for="myfile" class="input--style-1">RESUME</label>
+                                    <input type="file" placeholder="RESUME" name="resume" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender" required>
+                                            <option disabled="disabled" selected="selected">GENDER</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input class="input--style-1" type="number" placeholder="12th MARKS" name="marks"
+                                    id="marks" required>
+
+                            </div>
+
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="class" required>
+                                    <option disabled="disabled" selected="selected">Specialization</option>
+                                    <option>CSE</option>
+                                    <option>IT</option>
+                                    <option>ECE</option>
+                                    <option>EEE</option>
+                                    <option>civil</option>
+                                    <option>mechanical</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-1" type="number" placeholder="phone No" name="res_code"
+                                        id="phoneNo" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+
+                                    <input class="input--style-1" type="password" id="psw" name="psw"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                        placeholder="PASSWORD" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+
+                                    <input class="input--style-1" type="password" id="psw2" name="psw"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Enter the correct password"
+                                        placeholder="CONFIRM PASSWORD" required>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Choose your specialisation:</p>
+
+                        <div style="position: relative;">
+                            <br>
+                            <label for="scales">C</label>
+                            <input type="checkbox" id="scales" name="scales" style="position: absolute; top: 17px;" ><br>
+                            <label for="horns">Java</label>
+                            <input type="checkbox" id="horns" name="horns" style="position: absolute; left: 9px;" >
+                            <br>
+                            <label for="horns">Python</label>
+                            <input type="checkbox" id="horns" name="horns" style="position: absolute; left: 9px;" >
+                            <br> <label for="horns">Javascript</label>
+                            <input type="checkbox" id="horns" name="horns" style="position: absolute; left: 9px;">
+                        </div>
+                        <div class="p-t-20">
+                            <input class="btn btn--radius btn--green" type="submit" value="Submit" id="button">
+
+                        </div>
+                        <div class="p-t-20">
+                            <input class="btn btn--radius btn--green" type="reset" value="Reset" id="button">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
